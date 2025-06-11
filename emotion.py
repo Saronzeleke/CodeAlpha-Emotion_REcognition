@@ -193,10 +193,6 @@ disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)
 disp.plot(cmap=plt.cm.Blues)
 plt.title("Confusion Matrix")
 plt.show()
-
-# -----------------------------
-# 11. Predict New File
-# -----------------------------
 def predict_emotion(file_path):
     features = extract_features(file_path)
     if features is None:
