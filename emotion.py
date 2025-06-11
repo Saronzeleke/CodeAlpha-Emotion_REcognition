@@ -30,10 +30,6 @@ def augment_audio(audio, sr):
         rate = np.random.uniform(0.9, 1.1)
         audio = librosa.effects.time_stretch(audio, rate=rate)
     return audio
-
-# -----------------------------
-# 3. Feature Extraction
-# -----------------------------
 def extract_features(file_path):
     try:
         audio, sr = librosa.load(file_path, sr=None)
