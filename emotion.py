@@ -74,7 +74,6 @@ def load_dataset(data_path):
     return np.array(features), np.array(labels)
 DATA_PATH = "data/" 
 X, y = load_dataset(DATA_PATH)
-# Encode labels
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
 y_categorical = to_categorical(y_encoded)
