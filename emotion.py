@@ -33,8 +33,6 @@ def augment_audio(audio, sr):
 def extract_features(file_path):
     try:
         audio, sr = librosa.load(file_path, sr=None)
-
-        # Augment audio
         if np.random.rand() > 0.5:
             audio = augment_audio(audio, sr)
 
