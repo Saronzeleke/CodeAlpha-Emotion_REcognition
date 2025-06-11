@@ -27,7 +27,6 @@ def augment_audio(audio, sr):
     if np.random.rand() > 0.5:
         audio = librosa.effects.pitch_shift(audio, sr=sr, n_steps=np.random.randint(-2, 2))
     if np.random.rand() > 0.5:
-        # Time stretch between 0.9x and 1.1x speed
         rate = np.random.uniform(0.9, 1.1)
         audio = librosa.effects.time_stretch(audio, rate=rate)
     return audio
