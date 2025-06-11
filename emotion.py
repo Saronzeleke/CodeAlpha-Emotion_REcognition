@@ -80,8 +80,6 @@ y_categorical = to_categorical(y_encoded)
 X_train, X_test, y_train, y_test = train_test_split(X, y_categorical, test_size=0.2, random_state=42, stratify=y)
 X_train = X_train.reshape(X_train.shape[0], 1, X_train.shape[1])
 X_test = X_test.reshape(X_test.shape[0], 1, X_test.shape[1])
-
-# Compute class weights
 class_weights = compute_class_weight('balanced', classes=np.unique(y_encoded), y=y_encoded)
 class_weights_dict = dict(enumerate(class_weights))
 
