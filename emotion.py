@@ -96,10 +96,8 @@ def load_dataset(data_path):
 
 # -----------------------------
 # 5. Prepare Data
-# -----------------------------
 DATA_PATH = "data/" 
 X, y = load_dataset(DATA_PATH)
-
 # Encode labels
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
