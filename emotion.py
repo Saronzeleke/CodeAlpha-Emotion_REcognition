@@ -145,10 +145,6 @@ history = model.fit(
     class_weight=class_weights_dict,
     callbacks=[early_stop]
 )
-
-# -----------------------------
-# 8. Evaluate Model
-# -----------------------------
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f"\nTest Accuracy: {accuracy * 100:.2f}%")
 
