@@ -52,10 +52,6 @@ def extract_features(file_path):
     except Exception as e:
         print(f"Error extracting features from {file_path}: {e}")
         return None
-
-# -----------------------------
-# 4. Load Dataset
-# -----------------------------
 def load_dataset(data_path):
     features = []
     labels = []
