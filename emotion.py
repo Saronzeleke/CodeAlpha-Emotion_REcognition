@@ -11,10 +11,6 @@ from tensorflow.keras.layers import LSTM, Dense, Dropout, Conv1D, MaxPooling1D
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.callbacks import EarlyStopping
 import joblib
-
-# -----------------------------
-# 1. Define emotions to use
-# -----------------------------
 emotions = {
     '01': 'neutral',
     '02': 'calm',
