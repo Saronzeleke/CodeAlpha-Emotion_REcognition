@@ -206,5 +206,4 @@ def predict_emotion(file_path):
     predicted_label = le.inverse_transform([np.argmax(prediction)])
     return predicted_label[0]
 
-# Example usage:
 print(predict_emotion("path/to/audio.wav"))
