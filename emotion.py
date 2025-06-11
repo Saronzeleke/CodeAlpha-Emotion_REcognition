@@ -93,8 +93,6 @@ def load_dataset(data_path):
                     labels.append(emotion)
 
     return np.array(features), np.array(labels)
-
-# -----------------------------
 # 5. Prepare Data
 DATA_PATH = "data/" 
 X, y = load_dataset(DATA_PATH)
