@@ -72,7 +72,7 @@ def load_dataset(data_path):
                     labels.append(emotion)
 
     return np.array(features), np.array(labels)
-DATA_PATH = "data/" 
+DATA_PATH = "C:\Users\admin\OneDrive\Desktop\CodeAlpha-Emotion_REcognition\archive" 
 X, y = load_dataset(DATA_PATH)
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
