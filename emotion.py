@@ -77,8 +77,6 @@ X, y = load_dataset(DATA_PATH)
 le = LabelEncoder()
 y_encoded = le.fit_transform(y)
 y_categorical = to_categorical(y_encoded)
-
-# Split into train/test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y_categorical, test_size=0.2, random_state=42, stratify=y)
 
 # Reshape input for CNN-LSTM
