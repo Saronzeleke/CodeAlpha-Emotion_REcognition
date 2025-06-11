@@ -93,8 +93,6 @@ model.add(Dense(len(available_emotions), activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 print(model.summary())
-
-#early stopping
 early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
 history = model.fit(
     X_train, y_train,
@@ -107,7 +105,7 @@ history = model.fit(
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f"\nTest Accuracy: {accuracy * 100:.2f}%")
 
-# Save model and label encoder
+# Save model and label encoder 
 os.makedirs("models", exist_ok=True)
 model.save("models/speech_emotion_recognition_model.keras")
 joblib.dump(le, "label_encoder.pkl")
