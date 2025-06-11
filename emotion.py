@@ -1,4 +1,3 @@
-#pip install librosa numpy tensorflow scikit-learn pandas
 import os
 import numpy as np
 import librosa
