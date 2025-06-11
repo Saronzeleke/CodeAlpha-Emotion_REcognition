@@ -97,7 +97,7 @@ def load_dataset(data_path):
 # -----------------------------
 # 5. Prepare Data
 # -----------------------------
-DATA_PATH = "data/"  # Update this path accordingly
+DATA_PATH = "data/" 
 X, y = load_dataset(DATA_PATH)
 
 # Encode labels
