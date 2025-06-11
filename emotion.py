@@ -180,10 +180,6 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
-
-# -----------------------------
-# 10. Confusion Matrix
-# -----------------------------
 y_pred = model.predict(X_test)
 y_pred_labels = np.argmax(y_pred, axis=1)
 y_true_labels = np.argmax(y_test, axis=1)
