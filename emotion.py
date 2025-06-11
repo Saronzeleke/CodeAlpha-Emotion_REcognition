@@ -25,7 +25,6 @@ emotions = {
 available_emotions = {'angry', 'sad', 'neutral', 'happy', 'fearful', 'disgust', 'calm'}
 def augment_audio(audio, sr):
     if np.random.rand() > 0.5:
-        # Pitch shift ±2 semitones
         audio = librosa.effects.pitch_shift(audio, sr=sr, n_steps=np.random.randint(-2, 2))
     if np.random.rand() > 0.5:
         # Time stretch between 0.9x and 1.1x speed
