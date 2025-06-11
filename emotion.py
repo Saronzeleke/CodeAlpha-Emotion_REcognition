@@ -177,7 +177,6 @@ plt.title('Model Loss')
 plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend()
-
 plt.tight_layout()
 plt.show()
 y_pred = model.predict(X_test)
