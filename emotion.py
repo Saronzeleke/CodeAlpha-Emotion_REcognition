@@ -23,10 +23,6 @@ emotions = {
 }
 
 available_emotions = {'angry', 'sad', 'neutral', 'happy', 'fearful', 'disgust', 'calm'}
-
-# -----------------------------
-# 2. Data Augmentation
-# -----------------------------
 def augment_audio(audio, sr):
     if np.random.rand() > 0.5:
         # Pitch shift ±2 semitones
