@@ -133,10 +133,6 @@ print(model.summary())
 
 # Add early stopping
 early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
-
-# -----------------------------
-# 7. Train Model
-# -----------------------------
 history = model.fit(
     X_train, y_train,
     validation_data=(X_test, y_test),
