@@ -156,10 +156,6 @@ print(f"\nTest Accuracy: {accuracy * 100:.2f}%")
 os.makedirs("models", exist_ok=True)
 model.save("models/speech_emotion_recognition_model.h5")
 joblib.dump(le, "label_encoder.pkl")
-
-# -----------------------------
-# 9. Plot Training History
-# -----------------------------
 plt.figure(figsize=(12, 5))
 
 plt.subplot(1, 2, 1)
