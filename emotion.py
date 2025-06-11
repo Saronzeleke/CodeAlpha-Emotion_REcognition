@@ -154,7 +154,7 @@ print(f"\nTest Accuracy: {accuracy * 100:.2f}%")
 
 # Save model and label encoder
 os.makedirs("models", exist_ok=True)
-model.save("models/speech_emotion_recognition_model.h5")
+model.save("models/speech_emotion_recognition_model.keras")
 joblib.dump(le, "label_encoder.pkl")
 plt.figure(figsize=(12, 5))
 
