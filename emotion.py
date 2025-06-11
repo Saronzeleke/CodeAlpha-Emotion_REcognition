@@ -131,7 +131,7 @@ model.add(Dense(len(available_emotions), activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 print(model.summary())
 
-# Add early stopping
+#early stopping
 early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
 history = model.fit(
     X_train, y_train,
