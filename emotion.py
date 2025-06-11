@@ -116,9 +116,7 @@ X_test = X_test.reshape(X_test.shape[0], 1, X_test.shape[1])
 class_weights = compute_class_weight('balanced', classes=np.unique(y_encoded), y=y_encoded)
 class_weights_dict = dict(enumerate(class_weights))
 
-# -----------------------------
-# 6. Build CNN + LSTM Model
-# -----------------------------
+#cnn lstm model
 model = Sequential()
 model.add(Conv1D(filters=64, kernel_size=3, activation='relu', input_shape=(X_train.shape[1], X_train.shape[2])))
 model.add(MaxPooling1D(pool_size=2))
